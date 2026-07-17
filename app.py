@@ -302,7 +302,7 @@ def generate_pdf(age_group, prediction_text, risk_prob, recommendations):
 st.markdown("""
 <div class="hero-card">
     <span class="hero-icon">🩺</span>
-    <h1>Postnatal Depression Prediction</h1>
+    <h1>Postpartum Depression Prediction</h1>
     <p>Clinical screening tool</p>
 </div>
 """, unsafe_allow_html=True)
