@@ -11,7 +11,7 @@ from datetime import datetime
 
 # ===================== PAGE CONFIG =====================
 st.set_page_config(
-    page_title="Postnatal Depression Prediction",
+    page_title="Postpartum Depression Prediction",
     page_icon="🩺",
     layout="centered"
 )
