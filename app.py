@@ -30,6 +30,17 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 #MainMenu, footer, header { visibility: hidden; }
 
+/* Force readable label/text colors regardless of workspace theme (light/dark) */
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label,
+[data-testid="stCaptionContainer"] p,
+.stSelectbox div[data-baseweb="select"] * {
+    color: #1e1b4b !important;
+}
+.form-card p, .form-card label {
+    color: #1e1b4b !important;
+}
+
 .hero-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 20px;
