@@ -39,12 +39,10 @@ st.markdown(f"""
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
-
 html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
 .stApp {{ background: {PAGE_BG}; }}
 #MainMenu, footer, header {{ visibility: hidden; }}
 .block-container {{ padding-top: 1.5rem; max-width: 980px; }}
-
 /* ---- Topbar ---- */
 .topbar {{
     display: flex; align-items: center; justify-content: space-between;
@@ -63,7 +61,6 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
     background: {SUCCESS_SOFT}; color: {SUCCESS}; display: flex; align-items: center; gap: 6px;
 }}
 .status-dot {{ width: 6px; height: 6px; border-radius: 50%; background: {SUCCESS}; display: inline-block; }}
-
 /* ---- Step indicator ---- */
 .steps {{ display: flex; gap: 10px; margin-bottom: 18px; }}
 .step {{
@@ -76,7 +73,6 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
 }}
 .step-label {{ font-size: 12.5px; font-weight: 600; color: {INK}; }}
 .step-desc {{ font-size: 11px; color: {MUTE}; }}
-
 /* ---- Section cards ---- */
 .section-card {{
     background: {SURFACE}; border: 1px solid {LINE}; border-radius: 14px;
@@ -87,7 +83,6 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
 .section-title {{
     font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: {ACCENT_DARK};
 }}
-
 /* ---- Form controls ---- */
 [data-testid="stWidgetLabel"] p, [data-testid="stWidgetLabel"] label {{
     color: {SLATE} !important; font-size: 13.5px !important; font-weight: 500 !important;
@@ -96,7 +91,6 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
     border-radius: 9px !important; border-color: {LINE} !important; background: #FAFBFD !important;
 }}
 .stSelectbox div[data-baseweb="select"] * {{ color: {INK} !important; font-size: 13.5px !important; }}
-
 /* ---- Primary button ---- */
 .stButton > button[kind="primary"] {{
     background: {ACCENT} !important; color: white !important; border: none !important;
@@ -104,13 +98,11 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
     font-size: 14.5px !important; box-shadow: none !important; transition: background 0.15s ease !important;
 }}
 .stButton > button[kind="primary"]:hover {{ background: {ACCENT_DARK} !important; }}
-
 .stDownloadButton > button {{
     background: {SURFACE} !important; color: {ACCENT} !important; border: 1.5px solid {ACCENT} !important;
     border-radius: 10px !important; font-weight: 600 !important; font-size: 13.5px !important;
 }}
 .stDownloadButton > button:hover {{ background: {ACCENT_SOFT} !important; }}
-
 /* ---- Result banner ---- */
 .result-banner {{
     display: flex; align-items: center; gap: 16px; border-radius: 14px; padding: 18px 22px; margin-bottom: 16px;
@@ -126,12 +118,10 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
 .result-title.high {{ color: {DANGER}; }}
 .result-title.low {{ color: {SUCCESS}; }}
 .result-sub {{ font-size: 13px; color: {SLATE}; margin: 2px 0 0 0; }}
-
 /* ---- Metric cards ---- */
 .metric-card {{ background: {SURFACE}; border: 1px solid {LINE}; border-radius: 12px; padding: 14px 16px; }}
 .metric-label {{ font-size: 11.5px; color: {MUTE}; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 4px 0; }}
 .metric-value {{ font-size: 22px; font-weight: 700; color: {INK}; margin: 0; font-family: 'Manrope', sans-serif; }}
-
 /* ---- Recommendations ---- */
 .rec-item {{
     display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid {LINE};
@@ -139,14 +129,12 @@ html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; color: {INK}; }}
 .rec-item:last-child {{ border-bottom: none; }}
 .rec-item i {{ color: {ACCENT}; font-size: 15px; margin-top: 2px; flex-shrink: 0; }}
 .rec-item p {{ margin: 0; font-size: 13.5px; color: {SLATE}; }}
-
 /* ---- Disclaimer ---- */
 .disclaimer {{
     display: flex; align-items: center; gap: 10px; background: {WARN_SOFT}; border: 1px solid #FDE68A;
     border-radius: 10px; padding: 10px 16px; margin-top: 18px; font-size: 12.5px; color: #92400E;
 }}
 .disclaimer i {{ color: {WARN}; font-size: 16px; flex-shrink: 0; }}
-
 hr {{ border-color: {LINE} !important; margin: 1.25rem 0 !important; }}
 </style>
 """, unsafe_allow_html=True)
